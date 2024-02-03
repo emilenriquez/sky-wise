@@ -80,7 +80,7 @@
                       {weatherData?.list.map((weather) => (
                         <tr key={weather.dt}>
                           <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">
-                            {dayjs(weather.dt).format('MM/DD/YYYY')}
+                            {dayjs(weather.dt_text).format('MM/DD/YYYY')}
                           </td>
                           <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{kelvinToFahrenheit(weather.main.temp)}</td>
                           <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{weather.weather[0].description}</td>
