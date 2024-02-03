@@ -10,7 +10,6 @@ function classNames(...classes) {
 function updateSearchParam (searchParams, param, value) {
   const currentSearchParams = new URLSearchParams(Array.from(searchParams.entries()));
   currentSearchParams.set(param, value);
-  console.log('CURRENT_SP', currentSearchParams.toString());
   return currentSearchParams;
   }
 

@@ -24,7 +24,6 @@ export default function Home() {
   const [lon, setLon] = useState(null);
 
   const handleSelectedCity = (lat, lon) => {
-    console.log('selected Option', {lat, lon});
     setLat(lat);
     setLon(lon);
   }
@@ -42,7 +41,7 @@ export default function Home() {
           type="button"
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue active:bg-blue-800"
           disabled={!lat || !lon}
-          onClick={() => console.log('test') || router.push(`/weather?lat=${lat}&lon=${lon}`)}
+          onClick={() => outer.push(`/weather?lat=${lat}&lon=${lon}`)}
         >
           Display Weather
         </button>
